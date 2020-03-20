@@ -1,6 +1,17 @@
-$primary-color: #444;
-
 body {
-  background: $primary-color;
-  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.btn {
+  padding: 15px 35px;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  text: {
+    transform: uppercase;
+    decoration: none;
+  }
+
 }
