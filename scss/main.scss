@@ -1,1 +1,56 @@
+$white: #fcfffd;
+$coral: #938581;
+$green: #75c9c8;
 
+$box-shadow: 0 0 15px $coral;
+$background: $white;
+$br: 10px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: sans-serif;
+  line-height: 1.6;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 75%;
+  padding: 2em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 45px;
+  text-decoration: none;
+  transition: $box-shadow 150ms, $background 150ms;
+  border-radius: $br;
+
+  .btn__primary {
+    border: 2px solid $coral;
+    background: $coral;
+    color: $white;
+    box-shadow: 0;
+  }
+  .btn__primary:hover {
+    background: $green;
+    border-color: $green;
+    box-shadow: 0 0 15px $coral;
+  }
+  .btn__outline {
+    border: 2px solid $coral;
+    color: $coral;
+  }
+  .btn__outline:hover {
+    background: $green;
+    border-color: $green;
+    color: $white;
+    box-shadow: $box-shadow;
+  }
+}
