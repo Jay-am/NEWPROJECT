@@ -2,7 +2,7 @@
 
 //COLORS
 $white: #fff;
-$light-grey: rgba(0, 0, 0, 0.35);
+$light-grey: rgba(0, 0, 0, 0.1);
 $dark-grey: rgba(0, 0, 0, 0.5);
 $green: #72b01d;
 
@@ -13,7 +13,7 @@ $clr-heading: $clr-accent;
 //TYPOGRAPHY
 $ff: "Raleway", sans-serif;
 $fw-l: 300;
-$fw-l: 400;
+$fw-b: 400;
 $fw-l: 700;
 
 $fs-h2: (48/16) * 1rem;
@@ -37,4 +37,65 @@ body {
   font-family: $ff;
   font-size: fs-body;
   color: $clr-body;
+}
+
+h2 {
+  font-size: $fs-h2;
+  color: $clr-heading;
+  letter-spacing: $ls;
+  text-transform: uppercase;
+}
+
+//PRICING TABLE
+.pricing {
+  text-align: center;
+}
+
+.prices {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+}
+
+.price {
+  background: white;
+  box-shadow: $bs;
+  padding: 4 * $spacer;
+
+  &__title {
+    color: $clr-heading;
+    letter-spacing: $ls;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    &:not(:last-of-type)::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background: $light-grey;
+      margin: ($spacer * 2) 0;
+    }
+  }
+
+  &__cost {
+    font: {
+      seize: $fs-xl;
+      weight: $fw-b;
+    }
+    color: $clr-accent;
+
+    span {
+      font: {
+        size: $fs-body;
+        weight: $fw-l;
+      }
+    }
+  }
 }
