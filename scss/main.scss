@@ -25,4 +25,16 @@ $ls: 5px;
 
 //HELPERS
 $spacer: 1rem;
-$bs: 0 0 $spacer light-grey;
+$bs: 0 0 $spacer $light-grey;
+
+//GENERAL STYLES
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $ff;
+  font-size: fs-body;
+  color: $clr-body;
+}
