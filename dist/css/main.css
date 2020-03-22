@@ -5,40 +5,57 @@
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  font-size: fs-body;
+  font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.5); }
 
 h2 {
   font-size: 3rem;
-  color: #72b01d;
+  color: #72B01D;
   letter-spacing: 5px;
   text-transform: uppercase; }
 
 .button {
   display: inline-block;
-  padding: 1rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   background: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   text-decoration: none;
-  text-font-weight: 400;
-  text-font-size: 1rem;
-  text-color: #fff;
-  text-letter-spacing: 5px; }
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 5px;
+  transition: all ease-out 200ms; }
+  .button:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background: #72B01D;
+    transform: scale(1.22); }
+  .button--accent {
+    background: #fff;
+    color: #72B01D; }
+    .button--accent:hover {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff; }
 
 .pricing {
-  text-align: center; }
+  text-align: center;
+  padding: 100px 0; }
 
 .prices {
   width: 95%;
   max-width: 1200px;
-  display: flex; }
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
 
 .price {
-  background: white;
+  background: #fff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  padding: 4rem; }
+  padding: 5rem; }
+  .price + .price {
+    margin-left: 1rem; }
   .price__title {
-    color: #72b01d;
+    color: #72B01D;
     letter-spacing: 5px;
     text-transform: uppercase; }
   .price__list {
@@ -46,15 +63,23 @@ h2 {
     padding: 0;
     list-style: none; }
   .price__list-item:not(:last-of-type)::after {
-    content: "";
+    content: '';
     display: block;
     height: 1px;
     background: rgba(0, 0, 0, 0.1);
     margin: 2rem 0; }
   .price__cost {
-    font-seize: 4.5rem;
-    font-weight: 400;
-    color: #72b01d; }
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #72B01D; }
     .price__cost span {
       font-size: 1.5rem;
-      font-weight: 700; }
+      font-weight: 300; }
+  .price--accent {
+    background: #72B01D;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-top: -3rem; }
+    .price--accent .price__title,
+    .price--accent .price__cost {
+      color: #fff; }
