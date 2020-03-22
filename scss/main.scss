@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
 
+//COLORS
 $white: #fff;
-$grey: rgba(0, 0, 0, 0.35);
+$light-grey: rgba(0, 0, 0, 0.35);
 $dark-grey: rgba(0, 0, 0, 0.5);
 $green: #72b01d;
+
+$clr-accent: $green;
+$clr-body: $dark-grey;
+$clr-heading: $clr-accent;
+
+//TYPOGRAPHY
+$ff: "Raleway", sans-serif;
+$fw-l: 300;
+$fw-l: 400;
+$fw-l: 700;
+
+$fs-h2: (48/16) * 1rem;
+$fs-body: (24/16) * 1rem;
+$fs-xl: (72/16) * 1rem;
+$fs-sm: (16/16) * 1rem;
+
+$ls: 5px;
+
