@@ -43,3 +43,30 @@ body {
 .title {
   @include pseudo(150px, 1px, black);
 }
+
+// Buttons
+
+@mixin button($color, $background) {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+  background: $background;
+  color: $color;
+  font-size: 36px;
+}
+
+.button-one {
+  @include button($color: #ffc857, $background: #db3a34);
+}
+
+.button-two {
+  @include button($color: #177e89, $background: #084c61);
+}
+
+.button-three {
+  @include button($color: rgb(123, 255, 87), $background: rgb(11, 132, 69));
+}

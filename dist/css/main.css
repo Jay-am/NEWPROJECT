@@ -24,3 +24,33 @@ body {
   width: 150px;
   height: 1px;
   background: black; }
+
+.button-one {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #db3a34;
+  color: #ffc857;
+  font-size: 36px; }
+
+.button-two {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #084c61;
+  color: #177e89;
+  font-size: 36px; }
+
+.button-three {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #0b8445;
+  color: #7bff57;
+  font-size: 36px; }
