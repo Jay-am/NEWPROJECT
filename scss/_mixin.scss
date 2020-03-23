@@ -1,0 +1,82 @@
+body {
+  font-size: 3rem;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  text-align: center;
+  padding: 25vh 0;
+}
+
+// Gradient
+
+@mixin gradient($degrees, $color-1, $color-2) {
+  background: linear-gradient($degrees, $color-1, $color-2);
+}
+
+.section-one {
+  @include gradient(45deg, #db3a34, #ffc857);
+}
+
+.section-two {
+  @include gradient(150deg, #177e89, #084c61);
+}
+
+.section-three {
+  @include gradient(190deg, rgb(11, 132, 69), rgb(123, 255, 87));
+}
+
+// Pseudo Element
+
+@mixin pseudo($width, $height, $background) {
+  &:after {
+    display: block;
+    content: ‘’;
+    margin: 0 auto;
+    width: $width;
+    height: $height;
+    background: $background;
+  }
+}
+
+.title {
+  @include pseudo(150px, 1px, black);
+}
+
+// Buttons
+
+@mixin button($color, $background, $hvr-color, $hvr-bg) {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+  font-size: 36px;
+  background: $background;
+  color: $color;
+
+  &:hover {
+    background: $hvr-bg;
+    color: $hvr-color;
+  }
+}
+
+.button-one {
+  @include button(#ffc857, #db3a34, #db900f, #8d0a06d9);
+}
+
+.button-two {
+  @include button(#177e89, #084c61, #03626d, #013646);
+}
+
+.button-three {
+  @include button(
+    rgb(123, 255, 87),
+    rgb(11, 132, 69),
+    rgb(58, 236, 9),
+    rgb(1, 65, 32)
+  );
+}
