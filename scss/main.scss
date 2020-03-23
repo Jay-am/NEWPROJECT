@@ -33,6 +33,12 @@ $fw-bold: 900;
 }
 
 // Styles
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -43,4 +49,21 @@ body {
 .card {
   width: 600px;
   background: green;
+
+  &__title {
+    @include font(69px, $fw-bold, $clr-white, 0.8);
+    text-transform: uppercase;
+  }
+
+  &__price {
+    @include font(60px, $fw-light, $clr-white);
+
+    span {
+      font-size: 30px;
+    }
+  }
+
+  &__desc {
+    @include font(24px, $fw-normal, rgb(black, 0.7));
+  }
 }
