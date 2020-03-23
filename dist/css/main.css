@@ -31,9 +31,12 @@ body {
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 36px;
   background: #db3a34;
-  color: #ffc857;
-  font-size: 36px; }
+  color: #ffc857; }
+  .button-one:hover {
+    background: #8d0a06d9;
+    color: #db900f; }
 
 .button-two {
   display: inline-block;
@@ -41,9 +44,12 @@ body {
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 36px;
   background: #084c61;
-  color: #177e89;
-  font-size: 36px; }
+  color: #177e89; }
+  .button-two:hover {
+    background: #013646;
+    color: #03626d; }
 
 .button-three {
   display: inline-block;
@@ -51,6 +57,9 @@ body {
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 36px;
   background: #0b8445;
-  color: #7bff57;
-  font-size: 36px; }
+  color: #7bff57; }
+  .button-three:hover {
+    background: #014120;
+    color: #3aec09; }
