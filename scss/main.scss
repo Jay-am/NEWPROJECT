@@ -1,0 +1,24 @@
+// Colors
+$clr-turquoise: #11998e;
+$clr-green: #38ef7d;
+$clr-orange: #ff715b;
+$clr-white: white;
+
+//Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+$ff-ss: "Raleway", sans-serif;
+$fw-light: 300;
+$fw-normal: 500;
+$fw-bold: 900;
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 600px;
+  background: green;
+}
