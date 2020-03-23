@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 3rem; }
 
@@ -15,3 +16,11 @@ body {
 
 .section-three {
   background: linear-gradient(190deg, #0b8445, #7bff57); }
+
+.title:after {
+  display: block;
+  content: ‘’;
+  margin: 0 auto;
+  width: 150px;
+  height: 1px;
+  background: black; }

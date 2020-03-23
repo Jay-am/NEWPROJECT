@@ -26,3 +26,20 @@ body {
 .section-three {
   @include gradient(190deg, rgb(11, 132, 69), rgb(123, 255, 87));
 }
+
+// Pseudo Element
+
+@mixin pseudo($width, $height, $background) {
+  &:after {
+    display: block;
+    content: ‘’;
+    margin: 0 auto;
+    width: $width;
+    height: $height;
+    background: $background;
+  }
+}
+
+.title {
+  @include pseudo(150px, 1px, black);
+}
