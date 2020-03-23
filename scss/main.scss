@@ -1,1 +1,28 @@
+body {
+  font-size: 3rem;
+}
 
+.section-one,
+.section-two,
+.section-three {
+  text-align: center;
+  padding: 25vh 0;
+}
+
+// Gradient
+
+@mixin gradient($degrees, $color-1, $color-2) {
+  background: linear-gradient($degrees, $color-1, $color-2);
+}
+
+.section-one {
+  @include gradient(45deg, #db3a34, #ffc857);
+}
+
+.section-two {
+  @include gradient(150deg, #177e89, #084c61);
+}
+
+.section-three {
+  @include gradient(190deg, rgb(11, 132, 69), rgb(123, 255, 87));
+}

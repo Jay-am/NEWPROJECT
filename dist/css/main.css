@@ -1,0 +1,17 @@
+body {
+  font-size: 3rem; }
+
+.section-one,
+.section-two,
+.section-three {
+  text-align: center;
+  padding: 25vh 0; }
+
+.section-one {
+  background: linear-gradient(45deg, #db3a34, #ffc857); }
+
+.section-two {
+  background: linear-gradient(150deg, #177e89, #084c61); }
+
+.section-three {
+  background: linear-gradient(190deg, #0b8445, #7bff57); }
