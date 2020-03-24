@@ -1,0 +1,15 @@
+@mixin mq-small {
+  @media only screen and (max-width: 650px) {
+    @content;
+  }
+}
+
+body {
+  background: fuchsia;
+}
+
+@include mq-small {
+  body {
+    background: blue;
+  }
+}

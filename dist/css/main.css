@@ -1,0 +1,6 @@
+body {
+  background: fuchsia; }
+
+@media only screen and (max-width: 650px) {
+  body {
+    background: blue; } }
