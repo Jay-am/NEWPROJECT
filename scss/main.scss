@@ -1,9 +1,20 @@
+$list-one: black, purple;
+$list-two: black, rgb(241, 178, 241), rgb(95, 2, 95), green;
+$list-three: black, rgb(241, 178, 241), rgb(95, 2, 95), rgb(8, 209, 8),
+  rgb(228, 238, 228), rgb(6, 80, 6);
+
+@mixin linear-gradient($args...) {
+  background: nth(nth($args, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($args), $args);
+  background: linear-gradient($args, $args);
+}
+
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
   -ms-transition: $args;
   -o-transition: $args;
-  transition: $args; 
+  transition: $args;
 }
 
 section {
@@ -29,4 +40,8 @@ section {
 .transition-box:hover {
   background: lightblue;
   right: 50%;
+}
+
+.challenge-part-one {
+  @include linear-gradient($list-one);
 }

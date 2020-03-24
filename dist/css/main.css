@@ -24,3 +24,8 @@ section {
 .transition-box:hover {
   background: lightblue;
   right: 50%; }
+
+.challenge-part-one {
+  background: black;
+  background: -webkit-linear-gradient(legacy-direction(black, purple), black, purple);
+  background: linear-gradient(black, purple, black, purple); }
