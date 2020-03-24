@@ -45,3 +45,7 @@ section {
 .challenge-part-one {
   @include linear-gradient($list-one);
 }
+
+.challenge-part-two {
+  @include linear-gradient($list-two);
+}

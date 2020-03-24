@@ -29,3 +29,8 @@ section {
   background: black;
   background: -webkit-linear-gradient(legacy-direction(black, purple), black, purple);
   background: linear-gradient(black, purple, black, purple); }
+
+.challenge-part-two {
+  background: black;
+  background: -webkit-linear-gradient(legacy-direction(black, #f1b2f1, #5f025f, green), black, #f1b2f1, #5f025f, green);
+  background: linear-gradient(black, #f1b2f1, #5f025f, green, black, #f1b2f1, #5f025f, green); }
