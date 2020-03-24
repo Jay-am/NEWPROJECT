@@ -1,0 +1,55 @@
+$list-one: black, purple;
+$list-two: black, rgb(241, 178, 241), rgb(95, 2, 95), green;
+$list-three: black, rgb(241, 178, 241), rgb(95, 2, 95), rgb(8, 209, 8),
+  rgb(228, 238, 228), rgb(6, 80, 6);
+
+@mixin linear-gradient($args...) {
+  background: nth(nth($args, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($args), $args);
+  background: linear-gradient($args, $args);
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+section {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.transition-box {
+  background: pink;
+  padding: 0.5em;
+  position: absolute;
+  text-align: center;
+  top: 2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  // Your transition @include goes here
+  @include transition(right 500ms ease-out, background-color 1000ms ease-in);
+}
+.transition-box:hover {
+  background: lightblue;
+  right: 50%;
+}
+
+.challenge-part-one {
+  @include linear-gradient($list-one);
+}
+
+.challenge-part-two {
+  @include linear-gradient($list-two);
+}
+
+.challenge-part-three {
+  @include linear-gradient($list-three);
+}
