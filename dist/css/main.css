@@ -34,3 +34,8 @@ section {
   background: black;
   background: -webkit-linear-gradient(legacy-direction(black, #f1b2f1, #5f025f, green), black, #f1b2f1, #5f025f, green);
   background: linear-gradient(black, #f1b2f1, #5f025f, green, black, #f1b2f1, #5f025f, green); }
+
+.challenge-part-three {
+  background: black;
+  background: -webkit-linear-gradient(legacy-direction(black, #f1b2f1, #5f025f, #08d108, #e4eee4, #065006), black, #f1b2f1, #5f025f, #08d108, #e4eee4, #065006);
+  background: linear-gradient(black, #f1b2f1, #5f025f, #08d108, #e4eee4, #065006, black, #f1b2f1, #5f025f, #08d108, #e4eee4, #065006); }
