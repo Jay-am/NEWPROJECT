@@ -5,7 +5,7 @@
 }
 
 @mixin mq-medium {
-  @media only screen and (min-width: 601px) and (max-width: 900px) {
+  @media only screen and (min-width: 601px) and (max-width: 899px) {
     @content;
   }
 }
@@ -22,6 +22,12 @@
   }
 }
 
+@mixin mq-custom($size) {
+  @media only screen and ($size) {
+    @content;
+  }
+}
+
 body {
   @include mq-small {
     background: fuchsia;
@@ -34,5 +40,8 @@ body {
   }
   @include mq-xlarge {
     background: rgb(90, 1, 90);
+  }
+  @include mq-custom(900px) {
+    background: orange;
   }
 }
