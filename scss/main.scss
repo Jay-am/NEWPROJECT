@@ -1,7 +1,0 @@
-$clr-primary-1: #2a1b5b;
-
-@for $i from 0 to 5 {
-  .clr-primary-#{$i + 1} {
-    background: lighten($clr-primary-1, #{$i + 1} * 10%);
-  }
-}
